@@ -1,1 +1,42 @@
 @import "tailwindcss";
+
+/* 1. Shriftni e'lon qilish */
+@font-face {
+  font-family: 'Product Sans';
+  src: url('/fonts/ProductSans-Regular.woff2') format('woff2'),
+       url('/fonts/ProductSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Product Sans';
+  src: url('/fonts/ProductSans-Bold.woff2') format('woff2'),
+       url('/fonts/ProductSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 2. Tailwind tema kengaytmasi */
+@theme {
+  --font-family-product-sans: 'Product Sans', sans-serif;
+
+    /* Asosiy ranglar */
+  --color-btn-green: #5EB083;
+  
+  --color-for-text: #5B6574;
+
+  --color-btn-orange: #FFBB8A;
+
+  --color-small-grey: #CAD3E0;
+
+  --color-footer: #2A3034;
+
+}
+
+/* 3. Global shrift (ixtiyoriy) */
+body {
+  font-family: 'Product Sans', sans-serif;
+}
