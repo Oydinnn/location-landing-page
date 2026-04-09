@@ -1,0 +1,88 @@
+# ============================================
+# 2. .GITIGNORE FAYL YARATISH (MUHIM!)
+# ============================================
+
+cat > .gitignore << 'EOF'
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+.nuxt/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory
+coverage/
+*.lcov
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Large files (agar kerak bo'lmasa)
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+*.psd
+*.ai
+*.pdf
+*.exe
+*.dmg
+
+# Uploads (agar muhim bo'lmasa)
+uploads/
+images/temp/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+EOF
